@@ -1,0 +1,73 @@
+{
+  "escola": {
+    "nome": "G.R.E.S. Unidos de Bangu",
+    "nome_curto": "Unidos de Bangu",
+    "fundacao": 1937,
+    "slogan": "O Coração da Zona Oeste",
+    "descricao": "Desde 1937 colorindo o Carnaval carioca com a garra e o suor da nossa gente. Somos a alma operária que se transforma em poesia na Sapucaí.",
+    "cores": {
+      "primaria": "#8B0000",
+      "secundaria": "#FFFFFF",
+      "terciaria": "#C9A84C"
+    },
+    "stats": [
+      { "valor": "87+", "label": "Anos de Glórias" },
+      { "valor": "1k+", "label": "Componentes" },
+      { "valor": "15+", "label": "Títulos" }
+    ],
+    "redes_sociais": {
+      "instagram": "#",
+      "youtube": "#",
+      "facebook": "#"
+    }
+  },
+  "carnaval_2027": {
+    "ano": 2027,
+    "enredo": "O Brilho da Fábrica",
+    "subtitulo": "Prepare-se para o espetáculo. Nossa escola levará para a avenida o brilho da resiliência e a força da comunidade de Bangu em um desfile histórico.",
+    "data_desfile": "2027-02-13",
+    "divisao": "Série Ouro"
+  },
+  "nav_links": [
+    { "label": "Home", "href": "#home", "active": true },
+    { "label": "A Escola", "href": "#historia" },
+    { "label": "Carnaval 2027", "href": "#carnaval2027" },
+    { "label": "Galeria", "href": "#galeria" },
+    { "label": "Sócios", "href": "#participe" },
+    { "label": "Diretoria", "href": "#diretoria" }
+  ],
+  "participacao": [
+    {
+      "id": "socio",
+      "icon": "badge",
+      "titulo": "Sócio",
+      "descricao": "Torne-se um sócio e desfrute de benefícios exclusivos e acesso total à quadra.",
+      "cta": "Saiba Mais",
+      "href": "#"
+    },
+    {
+      "id": "desfile",
+      "icon": "theater_comedy",
+      "titulo": "Desfile",
+      "descricao": "Inscreva-se em nossas alas e viva a experiência mágica da Sapucaí.",
+      "cta": "Ver Alas",
+      "href": "#"
+    },
+    {
+      "id": "parceiro",
+      "icon": "handshake",
+      "titulo": "Parceiro",
+      "descricao": "Sua marca junto com a escola de samba mais tradicional da Zona Oeste.",
+      "cta": "Negócios",
+      "href": "#"
+    },
+    {
+      "id": "apoie",
+      "icon": "volunteer_activism",
+      "titulo": "Apoie",
+      "descricao": "Contribua com nossos projetos sociais e ajude a fortalecer Bangu.",
+      "cta": "Doar Agora",
+      "href": "#"
+    }
+  ]
+}
