@@ -22,6 +22,7 @@
   --color-border:       #E3BEB8;
 
   --font-serif:  'Noto Serif', Georgia, serif;
+  --font-hand:   'Cormorant Garamond', Georgia, serif;
   --font-sans:   'Be Vietnam Pro', system-ui, sans-serif;
 
   --radius-sm:   0.25rem;
@@ -282,7 +283,13 @@ h3 { font-size: clamp(1.2rem, 2.5vw, 1.75rem); font-weight: 500; }
 .hero-title span { color: var(--color-gold); font-style: italic; }
 
 .hero-desc {
-  font-size: 1.05rem; color: var(--color-text-muted); max-width: 46ch; line-height: 1.7;
+  font-family: var(--font-hand);
+  font-size: 1.8rem;
+  font-style: italic;
+  font-weight: 700;
+  color: var(--color-text-muted);
+  max-width: 52ch;
+  line-height: 1.6;
 }
 
 .hero-buttons { display: flex; flex-wrap: wrap; gap: 1rem; }
