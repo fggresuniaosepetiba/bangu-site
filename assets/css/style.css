@@ -662,6 +662,16 @@ section { padding-block: var(--section-py); }
 .historia-content p { color: var(--color-text-muted); line-height: 1.75; font-size: 1.05rem; }
 .historia-content p + p { margin-top: 1rem; }
 
+.historia-link {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  margin-top: 1.5rem;
+  color: var(--color-gold);
+  font-size: 0.65rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase;
+  transition: gap var(--transition);
+}
+.historia-link:hover { gap: 0.75rem; }
+.historia-link .material-symbols-outlined { font-size: 14px; }
+
 .historia-stats {
   display: flex; gap: 2.5rem;
   margin-top: 2rem; padding-top: 1.75rem;
@@ -844,8 +854,20 @@ section { padding-block: var(--section-py); }
   transition: all var(--transition);
 }
 .social-icons a:hover {
-  background: var(--color-gold);
-  border-color: var(--color-gold);
+  border-color: transparent;
+}
+.social-icons a[aria-label="Instagram"]:hover {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+  border-color: transparent;
+}
+.social-icons a[aria-label="TikTok"]:hover {
+  background: #000;
+  border-color: #000;
+  box-shadow: 2px 0 #25f4ee, -2px 0 #fe2c55;
+}
+.social-icons a[aria-label="YouTube"]:hover {
+  background: #ff0000;
+  border-color: #ff0000;
 }
 .social-icons .material-symbols-outlined { color: rgba(255,255,255,0.7); font-size: 18px; }
 .social-icons a:hover .material-symbols-outlined { color: var(--color-white); }

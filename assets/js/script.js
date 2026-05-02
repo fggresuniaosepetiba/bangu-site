@@ -112,7 +112,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── Countdown para Carnaval 2027 ──────────────────────────
   const countdownEl = document.getElementById('countdown');
   if (countdownEl) {
-    const target = new Date('2027-02-13T00:00:00');
+    const target = new Date('2027-02-05T22:00:00');
     function updateCountdown() {
       const diff = target - Date.now();
       if (diff <= 0) { countdownEl.textContent = '🎉 É Carnaval!'; return; }
