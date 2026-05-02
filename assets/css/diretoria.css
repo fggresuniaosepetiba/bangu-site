@@ -40,6 +40,25 @@
   display: inline-block;
 }
 
+.diretoria-section.bg-red {
+  background-color: var(--color-primary);
+  padding: 2rem;
+  border-radius: var(--radius-xl);
+  text-align: center;
+}
+
+.diretoria-section.bg-red h3 {
+  color: var(--color-white);
+}
+
+.diretoria-section.bg-red .diretoria-grid {
+  justify-content: center;
+}
+
+.diretoria-section.bg-red hr {
+  margin: 50px 0;
+}
+
 /* Grid de diretores */
 .diretoria-grid {
   display: grid;
