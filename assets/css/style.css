@@ -765,7 +765,6 @@ section { padding-block: var(--section-py); }
 
 .marquee-track {
   display: flex;
-  gap: 3rem;
   width: max-content;
   animation: marquee 30s linear infinite;
 }
@@ -775,6 +774,7 @@ section { padding-block: var(--section-py); }
   flex-shrink: 0;
   width: 120px;
   height: 120px;
+  margin-right: 3rem;
   border-radius: 50%;
   overflow: hidden;
   background: var(--color-white);
@@ -806,8 +806,7 @@ section { padding-block: var(--section-py); }
 }
 
 @media (max-width: 768px) {
-  .marquee-item { width: 90px; height: 90px; }
-  .marquee-track { gap: 1.5rem; }
+  .marquee-item { width: 90px; height: 90px; margin-right: 1.5rem; }
 }
 
 #galeria h2 {
@@ -1039,6 +1038,22 @@ section { padding-block: var(--section-py); }
   display: flex;
   gap: 1.5rem;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+.countdown-label {
+  color: var(--color-gold);
+  font-family: var(--font-hand);
+  font-style: italic;
+  font-weight: 800;
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  margin-bottom:1rem;
+  letter-spacing: 0.08em;
+}
+.countdown-label .year-num {
+  font-family: var(--font-hand);
+  font-weight: 900;
+  letter-spacing: 0.08em;
 }
 .countdown-wrap span {
   display: flex;
