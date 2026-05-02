@@ -45,7 +45,7 @@
 ## 🚀 Como Usar
 
 1. Extraia o `.zip`
-2. Abra `home.html` diretamente no navegador
+2. Abra `index.html` diretamente no navegador
    - **Não precisa de servidor** para visualizar
    - Para editar: abra a pasta no VS Code
 
