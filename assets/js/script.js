@@ -146,5 +146,30 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ── Samba-enredo player ──────────────────────────────────
+  const playBtn = document.querySelector('.play-btn');
+  const sambaAudio = document.getElementById('samba-audio');
+  const disc = document.querySelector('.disc');
+  const playIcon = document.querySelector('.play-icon');
+
+  if (playBtn && sambaAudio) {
+    playBtn.addEventListener('click', () => {
+      if (sambaAudio.paused) {
+        sambaAudio.play();
+        disc.classList.add('spinning');
+        playIcon.textContent = 'pause';
+      } else {
+        sambaAudio.pause();
+        disc.classList.remove('spinning');
+        playIcon.textContent = 'play_arrow';
+      }
+    });
+
+    sambaAudio.addEventListener('ended', () => {
+      disc.classList.remove('spinning');
+      playIcon.textContent = 'play_arrow';
+    });
+  }
+
   console.log('🎭 Unidos de Bangu — site carregado com sucesso!');
 });
