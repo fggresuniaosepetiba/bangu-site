@@ -1043,18 +1043,15 @@ section { padding-block: var(--section-py); }
 
 .countdown-label {
   color: var(--color-gold);
-  font-family: var(--font-hand);
+  font-family: var(--font-serif);
   font-style: italic;
-  font-weight: 800;
+  font-weight: 900;
   font-size: clamp(1.8rem, 3.5vw, 2.5rem);
   margin-bottom:1rem;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
-.countdown-label .year-num {
-  font-family: var(--font-hand);
-  font-weight: 900;
-  letter-spacing: 0.08em;
-}
+
 .countdown-wrap span {
   display: flex;
   flex-direction: column;
