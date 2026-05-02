@@ -4,7 +4,7 @@
    ============================================================ */
 
 #diretoria {
-  background: var(--color-white);
+  background: var(--color-primary);
   padding-block: var(--section-py);
 }
 
@@ -15,12 +15,12 @@
 }
 
 .diretoria-header h2 {
-  color: var(--color-primary);
+  color: var(--color-white);
   margin-top: 0.75rem;
 }
 
 .diretoria-header p {
-  color: var(--color-text-muted);
+  color: var(--color-white);
   font-size: 1.05rem;
   margin-top: 0.75rem;
 }
@@ -33,14 +33,14 @@
 .diretoria-section h3 {
   font-family: var(--font-serif);
   font-size: clamp(1.4rem, 2.5vw, 1.8rem);
-  color: var(--color-primary);
+  color: var(--color-white);
   margin-bottom: 2rem;
   padding-bottom: 0.75rem;
   border-bottom: 2px solid var(--color-gold);
   display: inline-block;
 }
 
-.diretoria-section.bg-red {
+/* .diretoria-section.bg-red {
   background-color: var(--color-primary);
   padding: 2rem;
   border-radius: var(--radius-xl);
@@ -53,7 +53,7 @@
 
 .diretoria-section.bg-red .diretoria-grid {
   justify-content: center;
-}
+} */
 
 .diretoria-section.bg-red hr {
   margin: 50px 0;
