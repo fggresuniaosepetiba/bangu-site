@@ -12,8 +12,6 @@
     :root {
       --bg-1: #2b0d0d;
       --bg-2: #120909;
-      --card: rgba(255, 255, 255, 0.08);
-      --border: rgba(255, 255, 255, 0.22);
       --text: #fdf6f2;
       --muted: #f0d8cf;
       --accent: #f3bd47;
@@ -36,17 +34,13 @@
       display: grid;
       place-items: center;
       padding: 1.5rem;
+      overflow: hidden;
     }
 
-    .card {
+    .page-content {
       width: min(680px, 100%);
-      border: 1px solid var(--border);
-      background: var(--card);
-      backdrop-filter: blur(6px);
-      border-radius: 24px;
       padding: clamp(1.2rem, 4vw, 2.2rem);
       text-align: center;
-      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
     }
 
     .code {
@@ -72,16 +66,16 @@
     .gif-wrap {
       border-radius: 16px;
       overflow: hidden;
-      border: 1px solid rgba(255, 255, 255, 0.14);
       max-width: 460px;
       margin: 0 auto;
-      background: rgba(0, 0, 0, 0.25);
     }
 
     .gif-wrap img {
       width: 100%;
       height: auto;
       display: block;
+      max-height: 48vh;
+      object-fit: contain;
     }
 
     .hint {
@@ -89,10 +83,24 @@
       font-size: 0.9rem;
       color: #f7c7ae;
     }
+
+    @media (max-width: 768px) {
+      body {
+        overflow: hidden;
+      }
+
+      .page-content {
+        padding: 1rem 0.25rem;
+      }
+
+      .gif-wrap img {
+        max-height: 44vh;
+      }
+    }
   </style>
 </head>
 <body>
-  <main class="card" role="main" aria-labelledby="status-title">
+  <main class="page-content" role="main" aria-labelledby="status-title">
     <span class="code" aria-hidden="true">404</span>
     <h1 id="status-title">Página temporariamente fora do ar</h1>
     <p>Estamos ajustando tudo por aqui. Em breve a home volta ao normal.</p>
